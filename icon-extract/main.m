@@ -8,12 +8,8 @@
 
 #import "PRHExtractIconsFromFileOperation.h"
 
-#import "BundleResourceSupport.h"
-
 int main (int argc, char **argv) {
 	@autoreleasepool {
-		PRHInstallBundleResourceFlipper();
-
 		NSOperationQueue *queue = [NSOperationQueue mainQueue];
 		NSFileManager *mgr = [NSFileManager new];
 		NSString *cwdPath = nil;

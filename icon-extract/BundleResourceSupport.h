@@ -25,5 +25,3 @@ struct BundleResource {
 	struct BundleLocalIDToToResourceIDMappingList frefMappingList;
 };
 #pragma options align=reset
-
-extern void PRHInstallBundleResourceFlipper(void);
