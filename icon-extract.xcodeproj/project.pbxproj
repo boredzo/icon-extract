@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		31067A13145C667500509BE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31067A12145C667500509BE2 /* Foundation.framework */; };
 		31067A16145C667500509BE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31067A15145C667500509BE2 /* main.m */; };
-		31067A22145C67D400509BE2 /* PRHExtractIconFromFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31067A21145C67D400509BE2 /* PRHExtractIconFromFileOperation.m */; };
+		31067A22145C67D400509BE2 /* PRHExtractIconsFromFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31067A21145C67D400509BE2 /* PRHExtractIconsFromFileOperation.m */; };
 		31067A24145C682A00509BE2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31067A23145C682A00509BE2 /* Carbon.framework */; };
+		31067A27145C77BF00509BE2 /* PRHResourceEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31067A26145C77BF00509BE2 /* PRHResourceEnumerator.m */; };
+		31067A2A145C894F00509BE2 /* BundleResourceSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 31067A29145C894F00509BE2 /* BundleResourceSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,9 +32,13 @@
 		31067A12145C667500509BE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		31067A15145C667500509BE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31067A18145C667500509BE2 /* icon-extract-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "icon-extract-Prefix.pch"; sourceTree = "<group>"; };
-		31067A20145C67D400509BE2 /* PRHExtractIconFromFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHExtractIconFromFileOperation.h; sourceTree = "<group>"; };
-		31067A21145C67D400509BE2 /* PRHExtractIconFromFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHExtractIconFromFileOperation.m; sourceTree = "<group>"; };
+		31067A20145C67D400509BE2 /* PRHExtractIconsFromFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHExtractIconsFromFileOperation.h; sourceTree = "<group>"; };
+		31067A21145C67D400509BE2 /* PRHExtractIconsFromFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHExtractIconsFromFileOperation.m; sourceTree = "<group>"; };
 		31067A23145C682A00509BE2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		31067A25145C77BF00509BE2 /* PRHResourceEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHResourceEnumerator.h; sourceTree = "<group>"; };
+		31067A26145C77BF00509BE2 /* PRHResourceEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHResourceEnumerator.m; sourceTree = "<group>"; };
+		31067A28145C894F00509BE2 /* BundleResourceSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleResourceSupport.h; sourceTree = "<group>"; };
+		31067A29145C894F00509BE2 /* BundleResourceSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleResourceSupport.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +85,12 @@
 			children = (
 				31067A15145C667500509BE2 /* main.m */,
 				31067A17145C667500509BE2 /* Supporting Files */,
-				31067A20145C67D400509BE2 /* PRHExtractIconFromFileOperation.h */,
-				31067A21145C67D400509BE2 /* PRHExtractIconFromFileOperation.m */,
+				31067A20145C67D400509BE2 /* PRHExtractIconsFromFileOperation.h */,
+				31067A21145C67D400509BE2 /* PRHExtractIconsFromFileOperation.m */,
+				31067A25145C77BF00509BE2 /* PRHResourceEnumerator.h */,
+				31067A26145C77BF00509BE2 /* PRHResourceEnumerator.m */,
+				31067A28145C894F00509BE2 /* BundleResourceSupport.h */,
+				31067A29145C894F00509BE2 /* BundleResourceSupport.m */,
 			);
 			path = "icon-extract";
 			sourceTree = "<group>";
@@ -144,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31067A16145C667500509BE2 /* main.m in Sources */,
-				31067A22145C67D400509BE2 /* PRHExtractIconFromFileOperation.m in Sources */,
+				31067A22145C67D400509BE2 /* PRHExtractIconsFromFileOperation.m in Sources */,
+				31067A27145C77BF00509BE2 /* PRHResourceEnumerator.m in Sources */,
+				31067A2A145C894F00509BE2 /* BundleResourceSupport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
