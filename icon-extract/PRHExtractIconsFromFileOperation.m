@@ -175,6 +175,7 @@
 	enum { iconFamilyHeaderSize = sizeof(IconFamilyResource) - sizeof(IconFamilyElement) };
 	NSMutableData *iconFamilyData = [NSMutableData dataWithLength:iconFamilyHeaderSize];
 
+	//XXX Here be WET code…
 	PRHResourceEnumerator *bundlesEnum = [PRHResourceEnumerator newWithResourceType:'BNDL'];
 	for (PRHResource *bundleResource in bundlesEnum) {
 		const struct BundleResource *bundlePtr = [bundleResource.data bytes];
