@@ -35,8 +35,12 @@ int main (int argc, char **argv) {
 			NSURL *destinationURL = [[sourceURL URLByDeletingLastPathComponent] URLByAppendingPathComponent:[NSString stringWithFormat:@"%@-icons.out", sourceBaseFilename] isDirectory:YES];
 			NSError *error = nil;
 			if (![mgr createDirectoryAtURL:destinationURL withIntermediateDirectories:NO attributes:nil error:&error]) {
-				NSLog(@"Couldn't create output directory at %@: %@", destinationURL, error);
-				continue;
+				if (([error domain] == NSCocoaErrorDomain) && ([error code] == NSFileWriteFileExistsError))
+					/*That's cool.*/;
+				else {
+					NSLog(@"Couldn't create output directory at %@: %@", destinationURL, error);
+					continue;
+				}
 			}
 
 			PRHExtractIconsFromFileOperation *op = [PRHExtractIconsFromFileOperation new];

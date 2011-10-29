@@ -78,6 +78,10 @@
 	return self;
 }
 
+- (void) dealloc {
+	ReleaseResource(resourceHandle);
+}
+
 - (NSData *) data {
 	NSData *data = nil;
 
