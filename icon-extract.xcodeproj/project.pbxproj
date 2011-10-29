@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		31067A13145C667500509BE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31067A12145C667500509BE2 /* Foundation.framework */; };
 		31067A16145C667500509BE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31067A15145C667500509BE2 /* main.m */; };
+		31067A22145C67D400509BE2 /* PRHExtractIconFromFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 31067A21145C67D400509BE2 /* PRHExtractIconFromFileOperation.m */; };
+		31067A24145C682A00509BE2 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31067A23145C682A00509BE2 /* Carbon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,9 @@
 		31067A12145C667500509BE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		31067A15145C667500509BE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31067A18145C667500509BE2 /* icon-extract-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "icon-extract-Prefix.pch"; sourceTree = "<group>"; };
+		31067A20145C67D400509BE2 /* PRHExtractIconFromFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHExtractIconFromFileOperation.h; sourceTree = "<group>"; };
+		31067A21145C67D400509BE2 /* PRHExtractIconFromFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHExtractIconFromFileOperation.m; sourceTree = "<group>"; };
+		31067A23145C682A00509BE2 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31067A24145C682A00509BE2 /* Carbon.framework in Frameworks */,
 				31067A13145C667500509BE2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				31067A12145C667500509BE2 /* Foundation.framework */,
+				31067A23145C682A00509BE2 /* Carbon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -72,6 +79,8 @@
 			children = (
 				31067A15145C667500509BE2 /* main.m */,
 				31067A17145C667500509BE2 /* Supporting Files */,
+				31067A20145C67D400509BE2 /* PRHExtractIconFromFileOperation.h */,
+				31067A21145C67D400509BE2 /* PRHExtractIconFromFileOperation.m */,
 			);
 			path = "icon-extract";
 			sourceTree = "<group>";
@@ -135,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31067A16145C667500509BE2 /* main.m in Sources */,
+				31067A22145C67D400509BE2 /* PRHExtractIconFromFileOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

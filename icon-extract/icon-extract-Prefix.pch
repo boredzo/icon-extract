@@ -2,6 +2,8 @@
 // Prefix header for all source files of the 'icon-extract' target in the 'icon-extract' project
 //
 
+#include <stdbool.h>
 #ifdef __OBJC__
-	#import <Foundation/Foundation.h>
+#	import <Foundation/Foundation.h>
 #endif
+#include <Carbon/Carbon.h>
